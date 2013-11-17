@@ -1,0 +1,21 @@
+2013-11-13 16:01:35 Error: [MissingViewException] View file "/var/www/cakephp/app/View/Alumnos/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/cakephp/app/View/Alumnos/index.ctp',
+)
+Request URL: /cakephp/alumnos
+Stack Trace:
+#0 /var/www/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-11-13 16:03:51 Error: [NotFoundException] Invalid alumno
+Request URL: /cakephp/alumnos/delete/0
+Stack Trace:
+#0 [internal function]: AlumnosController->delete('0')
+#1 /var/www/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(AlumnosController), Array)
+#2 /var/www/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AlumnosController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
